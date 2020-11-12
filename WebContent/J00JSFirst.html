@@ -11,42 +11,44 @@
     </style>
     <script>
         /*
-            Javascript 란 ?
-            웹브라우저에 의해 순차적으로 해석되어 실행되는 인터프리터방식의 언어로 
-            주로 웹페이지의 동적인 제어를 위해 사용된다.
+        JavaScript..란?
+            웹브라우저에 의해 순차적으로 해석되어 실행되는 
+            인터프리터방식의 언어로, 주로 웹페이지의 동적인
+            제어를 위해 사용된다. 
         */
-        var number; // number 를 선언한 상황. var 는 variable(변수) 의 줄인말
-        alert("number="+number); // 초기화하지 않았으므로 undefined 상태 
+        var number;//변수선언
+        alert("number="+ number);//초기화하지 않았으므로 undefined 상태
         if(number==undefined){
-            alert("타입이 정의 되지 않음"); // alert 는 경고창을 띄워준다.
+            alert("타입이 정의되지 않음");
         }
         else{
-            alert("타입이 정의 됨");
+            alert("타입이 정의됨");
         }
-        number = 10; // 정수로 초기화 되므로 number 타입으로 지정된다.
-        console.log("number" , number); // console 은 개발자 모드에서 확인 가능.
+
+        number = 10;//정수로 초기화 되므로 number타입으로 지정됨
+        console.log("number", number);
 
         /*
-            Javascript 에서는 문자와 문자열을 구분하지 않는다.
-            따라서 문자열을 표현할 때 '(싱글),"(더블) 둘 다 사용 가능하다. 
+        Javascript에서는 문자와 문자열을 구분하지 않는다. 따라서
+        문자열을 표현할때 '(싱글), "(더블) 둘다 사용가능하다. 
         */
         if(number==undefined){
-            console.log("타입이 정의 되지 않음");
+            console.log('타입이 정의되지 않음');
         }
         else{
-            console.log('타입이 정의 됨');
-            console.log('number의 타입' , typeof(number)); 
-            // typeof 는 해당 파일이 무엇으로 선언 되었는지 알려준다.
+            console.log('타입이 정의됨');
+            console.log('number의 타입', typeof(number));
         }
-    </script>    
+    </script>
 </head>
 <body>
-    <h2>자바스크립트 첫 번째 , 예제</h2>
-    alert() : 자바스크립트의 기본함수로 경고창을 띄운다.
+    <h2>자바스크립트 첫번째 예제</h2>
+    alert() : 자바스크립트의 기본함수로 경고창을 띄워줍니다. 
 
     <script>
-        alert('script 태그는 body에 쓸 수도 있습니다.');
-        console.log('개발자 도구의 console 에서 확인하세요 !' , number);
+        alert('script태그는 body에 쓸수도 있습니다.');
+        console.log('개발자 도구의 console에서 확인하세욤', number);     
     </script>
+
 </body>
 </html>
