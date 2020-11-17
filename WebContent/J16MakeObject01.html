@@ -5,22 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J16MakeObject01.html</title>
   <script>
-    function inquiry(){
+    /*
+      객체선언방법1 : JS의 내장객체인 Object()를 이용한다.
+        이 때 , 멤버함수는 일반적인 함수와 같이 미리 선언하고
+        객체의 참조변수를 통해 등록하는 형태로 기술한다.
+    */
+    function inquiry(){ // 잔고확인
       return this.balance;
     }
-    function deposit(money){
+    function deposit(money){ // 입금처리
       this.balance += money;
     }
-    function withdraw(money){
+    function withdraw(money){ // 출금처리
       this.balance -= money;
     }
-
+    // 사용자정의 객체 생성
     var account = new Object();
-
+    // 멤버변수 정의
     account.owner = "홍길동";
     account.code = "12345-78-999";
     account.balance = 1000000;
-
+    // 멤버메소드 정의 (함수 등록시 소괄호는 생략한다)
     account.i = inquiry;
     account.d = deposit;
     account.w = withdraw;

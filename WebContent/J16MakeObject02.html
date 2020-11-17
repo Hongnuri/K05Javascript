@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J16MakeObject02.html</title>
   <script>
+    /*
+      객체선언방법2 : 리터럴 표기법을 이용하여 선언한다.
+        리터럴 표기법은 정규화 되지 않은 방법처럼 보일 수 있으나 표현은 간소화 되고 
+        웹브라우저의 해석 속도는 더 빨라지는 장점이 있다.
+    */
     var account = {
+      // 멤버변수
       owner : "홍길동" ,
       code : "123456-78-999",
       balance : 150000,
 
+      // 멤버메소드
       inquiry : function(){
         return this.balance;
       },
